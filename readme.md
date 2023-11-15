@@ -34,6 +34,11 @@ export default defineConfig({
     }
   }
 })
+// on main.js 
+import * as jQuery from "jquery";
+
+// define & and jQuery on the global window object
+Object.assign(window, { $: jQuery, jQuery });
 ```
 ### Use as component
 1. import as global component.
