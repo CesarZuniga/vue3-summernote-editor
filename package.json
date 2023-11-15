@@ -1,6 +1,6 @@
 {
   "name": "summernote-editor-vue-3",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A vuejs 3 component for Summernote library",
   "main": "src/SummernoteEditor.vue",
   "scripts": {
