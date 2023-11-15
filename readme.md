@@ -5,7 +5,7 @@ A VueJs 3 component for use [Summernote WYSIWYG](https://summernote.org/)
 ## Install
 ``` cmd
 // npm install
-npm install summernote-editor-vue-3 --save
+npm install summernote-editor-vue3 --save
 ```
 
 You must be have `jQuery` at `window.$` and install summernote by yourself.
@@ -49,10 +49,8 @@ import "summernote/dist/summernote-lite.min";
 import "summernote/dist/summernote-lite.min.css";
 //Add import for change default lang to spanish if not add this line default lang is English
 import "summernote/dist/lang/summernote-es-ES.min";
-import SummernoteEditor from 'summernote-editor-vue-3';
 // import SummernoteEditor
-import SummernoteEditor from 'summernote-editor-vue-3';
-
+import SummernoteEditor from 'summernote-editor-vue3';
 
 const vueApp = createApp({});
 vueApp.component('SummernoteEditor', SummernoteEditor);
@@ -62,7 +60,7 @@ vueApp.component('SummernoteEditor', SummernoteEditor);
 2. import into a single component.
 ``` javascript
 // import SummernoteEditor
-import SummernoteEditor from 'summernote-editor-vue-3';
+import SummernoteEditor from 'summernote-editor-vue3';
 
 <template>
   <SummernoteEditor

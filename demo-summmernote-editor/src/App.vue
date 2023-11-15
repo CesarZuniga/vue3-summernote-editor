@@ -4,7 +4,7 @@ import {ref} from 'vue';
 import "summernote/dist/summernote-lite.min";
 import "summernote/dist/summernote-lite.min.css";
 import "summernote/dist/lang/summernote-es-ES.min";
-import SummernoteEditor from 'summernote-editor-vue-3';
+import SummernoteEditor from 'summernote-editor-vue3';
 const editor = ref('');
 </script>
 
