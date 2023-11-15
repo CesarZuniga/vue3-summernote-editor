@@ -41,7 +41,6 @@ const stopWatch = watch(
   () => props.modelValue,
   async (newValue) => {
     // do something
-    debugger;
     const currValue = $(elem).summernote("code");
     if (newValue != currValue) {
       $(elem).summernote("code", newValue);
@@ -53,7 +52,6 @@ const stopWatch = watch(
 );
 
 onMounted(() => {
-  debugger;
   elem = $(summernoteRefElement.value);
   elem.summernote({...props.config, lang: "es-ES" });
   $(elem).on("summernote.change", onChange);
