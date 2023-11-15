@@ -100,3 +100,6 @@ export default {
   - summernote events will be triggered in camelCase
   - `"summernote.change": "@summernoteChange"`
   - `"summernote.image.link.insert": "@summernoteImageLinkInsert"`
+
+### Screen Demo
+![alt text](https://github.com/CesarZuniga/vue3-summernote-editor/blob/master/demo-summmernote-editor/public/demo.png)
