@@ -26,7 +26,7 @@ const props = defineProps({
   // https://summernote.org/deep-dive/
   config: {
     type: Object,
-    default: () => window.SUMMERNOTE_DEFAULT_CONFIGS,
+    default: () => {return {...window.SUMMERNOTE_DEFAULT_CONFIGS, lang: "es-ES"}},
   },
 });
 
@@ -53,7 +53,7 @@ const stopWatch = watch(
 
 onMounted(() => {
   elem = $(summernoteRefElement.value);
-  elem.summernote({...props.config, lang: "es-ES" });
+  elem.summernote(props.config);
   $(elem).on("summernote.change", onChange);
   if (props.modelValue) {
     $(elem).summernote("code", props.modelValue);
