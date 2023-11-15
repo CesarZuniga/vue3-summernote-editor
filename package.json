@@ -1,5 +1,5 @@
 {
-  "name": "vue3-summernote-editor",
+  "name": "summernote-editor-vue-3",
   "version": "1.0.2",
   "description": "A vuejs 3 component for Summernote library",
   "main": "src/SummernoteEditor.vue",
@@ -8,17 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafwell/vue3-summernote-editor.git"
+    "url": "git+https://github.com/CesarZuniga/vue3-summernote-editor.git"
   },
   "keywords": [
     "vue3",
     "summernote",
     "wysiwyg"
   ],
-  "author": "Rafael Souza <“rafaotec@gmail.com”>",
+  "author": "Cesar Zuñiga <“cesaruriel007@gmail.com”>",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/rafwell/vue3-summernote-editor/issues"
+    "url": "https://github.com/CesarZuniga/vue3-summernote-editor/issues"
   },
-  "homepage": "https://github.com/rafwell/vue3-summernote-editor#readme"
+  "homepage": "https://github.com/CesarZuniga/vue3-summernote-editor#readme",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "summernote": "^0.8.20"
+  }
 }
