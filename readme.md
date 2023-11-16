@@ -12,34 +12,16 @@ You must be have `jQuery` at `window.$` and install summernote by yourself.
 
 
 ### Globla JQuery sample for vite
-``` javascript
-import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import inject from '@rollup/plugin-inject';
+<!-- import style summernote lite -->
+  <link href="./node_modules/summernote/dist/summernote-lite.min.css" rel="stylesheet">
+   <!-- import jquery -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- import summernote lite -->
+  <script src="./node_modules/summernote/dist/summernote-lite.min.js"></script>
+   <!-- this line change default lang to spanish -->
+  <script src="./node_modules/summernote/dist/lang/summernote-es-ES.min.js"></script>
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [
-    inject({
-      $: [ 'jquery', '*' ],
-      jQuery: 'jquery',
-    }),
-    vue(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
-})
-// on main.js 
-import * as jQuery from "jquery";
-
-// define & and jQuery on the global window object
-Object.assign(window, { $: jQuery, jQuery });
-```
 ### Use as component
 1. import as global component.
 ``` javascript
