@@ -12,8 +12,9 @@ You must be have `jQuery` at `window.$` and install summernote by yourself.
 
 
 ### Globla JQuery sample for vite
-
-<!-- import style summernote lite -->
+``` html
+  Add in index.html
+  <!-- import style summernote lite -->
   <link href="./node_modules/summernote/dist/summernote-lite.min.css" rel="stylesheet">
    <!-- import jquery -->
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
@@ -21,16 +22,11 @@ You must be have `jQuery` at `window.$` and install summernote by yourself.
   <script src="./node_modules/summernote/dist/summernote-lite.min.js"></script>
    <!-- this line change default lang to spanish -->
   <script src="./node_modules/summernote/dist/lang/summernote-es-ES.min.js"></script>
-
+```
 ### Use as component
 1. import as global component.
 ``` javascript
-//import summernote lite
-import "summernote/dist/summernote-lite.min";
-// import css summernote lite
-import "summernote/dist/summernote-lite.min.css";
-//Add import for change default lang to spanish if not add this line default lang is English
-import "summernote/dist/lang/summernote-es-ES.min";
+
 // import SummernoteEditor
 import SummernoteEditor from 'summernote-editor-vue3';
 
