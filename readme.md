@@ -8,10 +8,9 @@ A VueJs 3 component for use [Summernote WYSIWYG](https://summernote.org/)
 npm install summernote-editor-vue3 --save
 ```
 
-You must be have `jQuery` at `window.$` and install summernote by yourself.
 
 
-### Globla JQuery sample for vite
+### Globlal imports
 ``` html
   Add in index.html
   <!-- import style summernote lite -->
