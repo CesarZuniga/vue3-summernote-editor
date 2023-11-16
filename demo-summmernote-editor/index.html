@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo summernote editor</title>
+  <!-- import style summernote lite -->
+  <link href="./node_modules/summernote/dist/summernote-lite.min.css" rel="stylesheet">
+   <!-- import jquery -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- import summernote lite -->
+  <script src="./node_modules/summernote/dist/summernote-lite.min.js"></script>
+   <!-- this line change default lang to spanish -->
+  <script src="./node_modules/summernote/dist/lang/summernote-es-ES.min.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
