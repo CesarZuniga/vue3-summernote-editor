@@ -1,5 +1,7 @@
 <script setup>
-
+import * as jQuery from "jquery";
+// define & and jQuery on the global window object
+Object.assign(window, { $: jQuery, jQuery });
 import HelloWorld from './components/HelloWorld.vue'
 import {ref} from 'vue';
 import "summernote/dist/summernote-lite.min";
@@ -34,6 +36,10 @@ header {
   display: block;
   margin: 0 auto 2rem;
 }
+:deep(
+.note-editable){
+  min-height: 30vh;
+}
 
 @media (min-width: 1024px) {
   header {
@@ -41,11 +47,9 @@ header {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
   .logo {
     margin: 0 2rem 0 0;
   }
-
   header .wrapper {
     display: flex;
     place-items: flex-start;

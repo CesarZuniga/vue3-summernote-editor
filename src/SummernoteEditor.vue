@@ -37,8 +37,8 @@ const props = defineProps({
 const emit = defineEmits({
   // v-model event with validation
   "update:modelValue": (value) => value !== null,
-  "summernote.change": (value) => value,
-  "summernote.image.link.insert": (value) => value,
+  "summernoteChange": (value) => value,
+  "summernoteImageLinkInsert": (value) => value,
 });
 
 const stopWatch = watch(
