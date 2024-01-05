@@ -3,6 +3,10 @@
 </template>
 
 <script setup>
+import * as jQuery from "jquery";
+
+// define & and jQuery on the global window object
+Object.assign(window, { $: jQuery, jQuery });
 import { watch, onMounted, onBeforeUnmount, ref } from "vue";
 const summernoteRefElement = ref(null);
 const events = {
@@ -33,8 +37,8 @@ const props = defineProps({
 const emit = defineEmits({
   // v-model event with validation
   "update:modelValue": (value) => value !== null,
-  "summernote.change": "summernoteChange",
-  "summernote.image.link.insert": "summernoteImageLinkInsert",
+  "summernote.change": (value) => value,
+  "summernote.image.link.insert": (value) => value,
 });
 
 const stopWatch = watch(

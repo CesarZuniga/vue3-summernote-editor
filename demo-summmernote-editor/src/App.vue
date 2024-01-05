@@ -1,4 +1,5 @@
 <script setup>
+
 import HelloWorld from './components/HelloWorld.vue'
 import {ref} from 'vue';
 import "summernote/dist/summernote-lite.min";

@@ -1,6 +1,6 @@
 {
   "name": "summernote-editor-vue3",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A vuejs 3 component for Summernote library",
   "main": "src/SummernoteEditor.vue",
   "scripts": {
@@ -23,6 +23,6 @@
   "homepage": "https://github.com/CesarZuniga/vue3-summernote-editor#readme",
   "dependencies": {
     "jquery": "^3.7.1",
-    "summernote": "^0.8.20"
+    "summernote": "^0.8.18"
   }
 }
